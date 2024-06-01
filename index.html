@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linking font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    
+    <!--adding tailwindcss link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--configuring tailwindcss-->
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      
+</head>
+<body class="font-serif">
+
+  <!--navbar region-->
+    <nav class="bg-white shadow-sm">
+        <div class="container  mx-auto px-4 py-3 flex items-center">
+
+
+          <!--logo area-->
+            <div class="w-40">
+                <a href="index.html">
+                    <img src="logo image.jpg.jpg" alt="logo" width="40px" height="60px">
+                </a>
+            </div>
+
+            <!--navlinks area-->
+
+            <div class="ml-12 flex space-x-5">
+                <a href="#" class="flex items-center font-semibold text-sm hover:text-blue-500 transition mr-3"> 
+                  <span class="mr-2">
+                    <i class="fa fa-home"></i>
+                  </span>
+                  Home
+                </a>
+
+                <a href="#" class="flex items-center font-semibold text-sm hover:text-blue-500 transition mr-3">
+                  <span class ="mr-2">
+                    <i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+                    About
+                </a>
+
+                <a href="#" class="flex items-center font-semibold text-sm hover:text-blue-500 transition mr-3"> 
+                  <span class="mr-2">
+                      <i class="fa fa-phone"></i>
+                    </span>
+                    Contact
+                </a>
+            </div>
+
+            <div class="relative ml-auto">
+                 <span class="absolute left-3 top-2 text-gray-500">
+                      <i class="fa fa-search"></i>
+                 </span>
+                 <input type="text" 
+                 placeholder="search..."
+                 class="block w-full border-none rounded-3xl pl-11 pr-2 py-2 focus:outline-none bg-gray-100 text-gray-700 shadow-sm">
+            </div>
+            <div class="ml-5">
+                <a href="#" class="flex items-center text-sm font-semibold hover:text-blue-500 transition">
+                  <span class="mr-2">
+                  </span>
+                  Login/Register</a>
+            </div>
+        </div>
+    </nav>
+     
+    <!--main section-->
+    <main class="py-12 bg bg-gray-100 min-h-screen">
+        <div class="container mx-auto px-4 flex">
+
+          <!--category section-->
+          <div class="w-3/12">
+            <div class="bg-white shadow-sm rounded-sm p-4">
+              <h3 class="text-xl font-semibold text-gray-700 font-roboto mb-3">Categories</h3>
+              <div class="text-gray-700 space-y-2">
+                <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text to-blue-500 transition">
+                  <span class ="mr-2">
+                  <i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+                   <span>BEAUTI</span>
+                   <span class="font-normal ml-auto">(12)</span>
+                </a>
+
+                <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text to-blue-500 transition">
+                  <span class ="mr-2">
+                    <i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+                  <span>BUSINESS</span>
+                  <span class="font-normal ml-auto">(19)</span>
+                 </a>
+
+                 <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text to-blue-500 transition">
+                  <span class ="mr-2">
+                    <i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+                   <span>FASHION</span>
+                   <span class="font-normal ml-auto">(17)</span>
+                </a>
+
+                <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text to-blue-500 transition">
+                  <span class ="mr-2">
+                    <i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+                  <span>FOOD</span>
+                  <span class="font-normal ml-auto">(10)</span>
+               </a>
+
+               <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text to-blue-500 transition">
+                <span class ="mr-2">
+                  <i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+                <span>LEARN</span>
+                <span class="font-normal ml-auto">(7)</span>
+               </a>
+
+               <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text to-blue-500 transition">
+                <span class ="mr-2">
+                  <i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+                <span>MUSIC</span>
+                <span class="font-normal ml-auto">(18)</span>
+               </a>
+
+               <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text to-blue-500 transition">
+                <span class ="mr-2">
+                  <i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+                <span>NATURE</span>
+                <span class="font-normal ml-auto">(0)</span>
+               </a>
+
+               <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text to-blue-500 transition">
+                <span class ="mr-2">
+                  <i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+                <span>PEOPLE</span>
+                <span class="font-normal ml-auto">(14)</span>
+               </a>
+
+               <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text to-blue-500 transition">
+                <span class ="mr-2">
+                  <i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+                <span>SPORTS</span>
+                <span class="font-normal ml-auto">(8)</span>
+               </a>
+
+               <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text to-blue-500 transition">
+                <span class ="mr-2">
+                  <i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+                <span>TECHNOLOGY</span>
+                <span class="font-normal ml-auto">(15)</span>
+               </a>
+              </div>
+              
+
+
+              <!--recent posts section-->
+
+              <div class="bg-white shadow-sm p-4 mt-8">
+                 <h3 class="text-xl font-semibold text-gray-700 font-sans mb-3">Recent posts</h3>
+                 <div class="space-y-4">
+                   <a href="#" class="flex group">
+                     <div class="flex-shrink">
+                       <img src="jared-rice-NTyBbu66_SI-unsplash.jpg" class="w-24 h-24 rounded object-cover">
+                     </div>
+                     <div class="flex-grow pl-3">
+                         <h5 class="text-md leading-5 font-serif font-semibold group-hover:text-blue-500 transition">Peace and Tranquility are some essential components of living, here is why.</h5>
+                       <div class="flex text bg-gray-400 text-sm items-center">
+                         <span class="mr-1 text-xs"></span>
+                         May 23, 2024
+                       </div>
+                     </div>
+                   </a>
+
+                   <a href="#" class="flex group">
+                    <div class="flex-shrink">
+                      <img src="ambrose-chua-zxbNbuncq1g-unsplash.jpg" class="w-24 h-24 rounded object-cover">
+                    </div>
+                    <div class="flex-grow pl-3">
+                        <h5 class="text-md leading-5 font-serif font-semibold group-hover:text-blue-500 transition">Great exhibitions from the just concluded Nationwide Artist convention.</h5>
+                      <div class="flex text bg-gray-400 text-sm items-center">
+                        <span class="mr-1 text-xs"></span>
+                        May 23, 2024
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="flex group">
+                    <div class="flex-shrink">
+                      <img src="chris-lawton-zvKx6ixUhWQ-unsplash.jpg" class="w-20 h-14 rounded object-cover">
+                    </div>
+                    <div class="flex-grow pl-3">
+                        <h5 class="text-md leading-5 font-serif font-semibold group-hover:text-blue-500 transition">Book of life for seven kingdoms of Camlot.</h5>
+                      <div class="flex text bg-gray-400 text-sm items-center">
+                        <span class="mr-1 text-xs"></span>
+                        May 23, 2024
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="flex group">
+                    <div class="flex-shrink">
+                      <img src="ambrose-chua-zxbNbuncq1g-unsplash.jpg" class="w-24 h-24 rounded object-cover">
+                    </div>
+                    <div class="flex-grow pl-3">
+                        <h5 class="text-md leading-5 font-serif font-semibold group-hover:text-blue-500 transition">Great exhibitions from the just concluded Nationwide Artist convention.</h5>
+                      <div class="flex text bg-gray-400 text-sm items-center">
+                        <span class="mr-1 text-xs"></span>
+                        May 23, 2024
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="flex group">
+                    <div class="flex-shrink">
+                      <img src="https://media.gettyimages.com/id/1439541887/photo/london-england-arsenal-director-josh-kroenke-and-edu-the-arsenal-sporting-director-before-the.jpg?s=612x612&w=0&k=20&c=dPgM5oj5FcRWf27npM4BtNi2a8A-NY-dJUUhLRZNy_c=" class="w-24 h-24 rounded object-cover">
+                    </div>
+                    <div class="flex-grow pl-3">
+                        <h5 class="text-md leading-5 font-serif font-semibold group-hover:text-blue-500 transition">Arsenal fc scout teams have been on the look out for a new number 9 for the coming season.</h5>
+                      <div class="flex text bg-gray-400 text-sm items-center">
+                        <span class="mr-1 text-xs"></span>
+                        May 23, 2024
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="flex group">
+                    <div class="flex-shrink">
+                      <img src="https://media.gettyimages.com/id/1951682806/photo/bournemouth-england-juergen-klopp-manager-of-liverpool-applauds-the-fans-following-the-teams.jpg?s=612x612&w=0&k=20&c=ikR4mX5OWKua0ccL5LaZ57tf-4EpdWs3X9e5xyeJFpw=" alt="liverpool"      class="w-24 h-24 rounded object-cover">
+                    </div>
+                    <div class="flex-grow pl-3">
+                        <h5 class="text-md leading-5 font-serif font-semibold group-hover:text-blue-500 transition">We are liverpool we never walk alone.</h5>
+                      <div class="flex text bg-gray-400 text-sm items-center">
+                        <span class="mr-1 text-xs"></span>
+                        May 23, 2024
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <a href="#" class="flex group">
+                    <div class="flex-shrink">
+                      <img src="https://media.gettyimages.com/id/1250889323/photo/manchester-england-anthony-martial-of-manchester-united-celebrates-after-scoring-a-goal-to.jpg?s=612x612&w=0&k=20&c=_TrLBKVf37FpADe8eueEHdDvXCTLthvsx5IydZmdn9U=" class="w-24 h-24 rounded object-cover">
+                    </div>
+                    <div class="flex-grow pl-3">
+                        <h5 class="text-md leading-5 font-serif font-semibold group-hover:text-blue-500 transition">Man United's Anthony Martial has said his goodbye to the fans.</h5>
+                      <div class="flex text bg-gray-400 text-sm items-center">
+                        <span class="mr-1 text-xs"></span>
+                        May 23, 2024
+                      </div>
+                    </div>
+                  </a>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--broad-centered section-->
+
+          <div class="w-6/12 mx-6">
+             <div class="flex justify-between bg-white px-3 py-2 items-center rounded-sm mb-4">
+               <h5 class="text-base upperclass font-semibold font-serif">Business</h5>
+               <a href="#" class="text-black bg-blue-500 px-3 py-1 rounded-sm uppercase text-sm hover:bg-transparent hover:text-blue-500 transition border">See more</a>
+             </div>
+            
+             <div class="bg-white shadow-sm rounded-sm">
+                <a href="#" class="overflow-hidden block">
+                     <img src="istockphoto-1341631834-1024x1024.jpg" class="w-full h-96 object-cover rounded transform hover:scale-110 transition duration-500">
+                </a>
+                <div class="p-4">
+                   <a href="#">
+                      <h2 class="text-2xl font-semibold text bg-gray-700 font-serif hover:text-blue-500 transition">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quam eveniet possimus qui magnam sunt quasi quia modi culpa obcaecati?</h2>
+                   </a>
+
+                   <div class="flex mt-3 space-x-5">
+                       <div class="flex items-center text bg-gray-400 text-sm">
+                         <span class="mr-2 text-xs"></span>
+                         Blogging Tips
+                       </div>
+                       <div class="flex items-center text bg-gray-400 text-sm">
+                        <span class="mr-2 text-xs"></span>
+                         May 25, 2024
+                       </div>
+                   </div>
+                   <p class="text bg-gray-500 text-sm mt-2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, voluptates saepe. Neque, aliquam fugiat! Autem nesciunt vitae voluptatibus numquam aliquam sequi, incidunt vel at atque similique, voluptas alias cupiditate dolorem.
+                   </p>
+
+                   <p class="text bg-gray-500 text-sm border-green-500 mt-5">
+                    <span class="mr-1 text bg-gray-400 text-xl"></span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, voluptates saepe. Neque, aliquam fugiat! Autem nesciunt vitae voluptatibus numquam aliquam sequi, incidunt vel at atque similique, voluptas alias cupiditate dolorem.
+                    <span class="mr-1 text bg-gray-400 text-xl"></span>
+                   </p>
+
+
+                   <ul class="mt-6 pl-5 space-y-6">
+                      <li class="text-sm">
+                        <span class="mr-1">
+                        </span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sapiente!
+                      </li>
+
+                      <li class="text-sm">
+                        <span class="mr-1">
+                        </span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sapiente!
+                      </li>
+
+                      <li class="text-sm">
+                        <span class="mr-1">
+                        </span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sapiente!
+                      </li>
+                   </ul>
+
+                   <p class="text bg-gray-500 text-sm border-green-500 mt-5">
+                    <span class="mr-1 text bg-gray-400 text-xl"></span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, voluptates saepe. Neque, aliquam fugiat! Autem nesciunt vitae voluptatibus numquam aliquam sequi, incidunt vel at atque similique, voluptas alias cupiditate dolorem.
+                    <span class="mr-1 text bg-gray-400 text-xl"></span>
+                   </p>
+
+                   <p class="text bg-gray-500 text-sm border-green-500 mt-5">
+                    <span class="mr-1 text bg-gray-400 text-xl"></span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, voluptates saepe. Neque, aliquam fugiat! Autem nesciunt vitae voluptatibus numquam aliquam sequi, incidunt vel at atque similique, voluptas alias cupiditate dolorem.
+                    <span class="mr-1 text bg-gray-400 text-xl"></span>
+                   </p>
+                   <div class="flex flex-wrap gap-2">
+                     <a href="#" class="px-3 py-1 text-sm border bg-gray-200 rounded-sm hover:bg-blue-500 hover:text-white transition">Beauti</a>
+                     <a href="#"
+                       class="px-3 py-1 text-sm-border border bg-gray-200 rounded-sm transition hover:bg to-blue-500 hover:text-white">Sports</a>
+
+                       <a href="#"
+                       class="px-3 py-1 text-sm-border border bg-gray-200 rounded-sm transition hover:bg to-blue-500 hover:text-white">Coding</a>
+
+                       <a href="#"
+                       class="px-3 py-1 text-sm-border border bg-gray-200 rounded-sm transition hover:bg to-blue-500 hover:text-white">Web Design</a>
+
+                       <a href="#"
+                       class="px-3 py-1 text-sm-border border bg-gray-200 rounded-sm transition hover:bg to-blue-500 hover:text-white">Web App</a>
+
+                       <a href="#"
+                       class="px-3 py-1 text-sm-border border bg-gray-200 rounded-sm transition hover:bg to-blue-500 hover:text-white">Computer</a>
+
+                       <a href="#"
+                       class="px-3 py-1 text-sm-border border bg-gray-200 rounded-sm transition hover:bg to-blue-500 hover:text-white">Politics</a>
+                   </div>
+                </div>
+             </div>
+             <div class="">
+                <div class=" bg-white p-4 shadow-sm rounded-sm">
+                   <a href="#" class="overflow-hidden block">
+                    <img src="lovers.jpg.jpg" class="w-full h-60 object-cover rounded transform hover: scale-110 transition duration-500">
+                   </a>
+                   <div class="mt-3">
+                    <a href="#"></a>
+                   </div>
+                </div>
+             </div>
+
+             <div class="bg-white shadow-sm rounded-sm p-4">
+                <h3 class="text-xl font-semibold text bg-gray-700 font-serif mb-3">Social Pluggins</h3>
+                <div class="flex gap-2">
+                  <span class="text-2xl text-center">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter-square"></i>
+                    <i class="fa fa-youtube-square"></i></span>
+                </div>
+             </div>
+          </div>
+        </div>
+    </main>
+
+    
+    <!-- footer and social media icons section-->
+
+    <footer class="py-4 bg-white border-top">
+        <p class="text-sm text-center space-x-8">
+          Copyright @ 2024 <span class="font-semibold">Fabzytunz Library</span><br>
+          All Right Reserved.
+        </p>
+        
+    </footer>
+
+   
+</body>
+</html>
